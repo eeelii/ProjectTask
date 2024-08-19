@@ -67,7 +67,6 @@ main {
 main .about-me {
     display: flex;
     justify-content: space-between;
-    border: 2px solid;
 }
 main .about-me .about-me-section {
     display: flex;
@@ -133,7 +132,7 @@ main .prod-section .project_portfolio img {
 main .prod-section .project_portfolio {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     width: 50%;
     line-height: 2;
 }
@@ -153,6 +152,7 @@ main .contact-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     height: 200px;
 }
 
