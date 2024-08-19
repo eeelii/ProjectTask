@@ -1,8 +1,146 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-color: darkgray;
+:root {
+    /* Primary buttons, highlights, and important elements. */
+    --pink-color: #E91E63;
+    /* Headers, subheadings, and other accent elements. */
+    --dark-pink: #C2185B;
+    /* Backgrounds or light sections. */
+    --neutral-color: #F3E5F5;
+    /* Footer, dark sections, or overlays. */
+    --dark-bk: #2C2C2C;
+    /* Main body text */
+    --text-color: #212121;
+    /* Secondary text like metadata, captions. */
+    --secondary-text: #757575;
+    /* Subtle highlights, borders, or background details. */
+    --accent-color: #F8BBD0;
+    /* Small accents or call-to-action buttons for contrast. */
+    --comp-color: #00796B;
 }
+
+body {
+    background-color: var(--dark-bk);
+    color: var(--accent-color)
+}
+
+/* Design header  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+header .header-title {
+    text-align: center;
+    font-size: 25px;
+    color: var(--dark-pink)
+}
+
+header nav {
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+header nav a {
+    color: var(--dark-pink);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--pink-color);
+}
+
+/* Design main content now  */
+main {
+    margin: 0 auto;
+    width: 70%;
+}
+main .about-me {
+    display: flex;
+    justify-content: space-between;
+}
+main .about-me .about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+main .about-me .about-me-section .paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: justify;
+}
+main .about-me .about-me-section h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: var(--pink-color);
+}
+/* main .about-me .profile-photo {
+} */
+
+main .about-me .profile-photo img {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+
+/* @media only screen and (max-width: 1120px) {
+    main {
+        width: 1120px;
+        border: 3px solid red;
+    }
+} */
+
+
+main .prod-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+main .prod-section li {
+    line-height: 2;
+}
+
+
+main .skills-section .icons img, main .contact-section .contact-icons img {
+    width: 100px;
+    height: 100px;
+}
+
+main .skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+
+main .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
