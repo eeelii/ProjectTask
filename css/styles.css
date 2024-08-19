@@ -67,6 +67,7 @@ main {
 main .about-me {
     display: flex;
     justify-content: space-between;
+    border: 2px solid;
 }
 main .about-me .about-me-section {
     display: flex;
@@ -87,6 +88,7 @@ main .about-me .about-me-section h2 {
     margin-bottom: 20px;
     font-size: 25px;
     color: var(--pink-color);
+    text-transform: uppercase;
 }
 /* main .about-me .profile-photo {
 } */
@@ -111,13 +113,30 @@ main .prod-section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 200px;
+    height: auto;
 }
-main .prod-section li {
+main .prod-section h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+main .prod-section .projects {
+    display: flex;
+}
+
+main .prod-section .project_portfolio h3 {
+    color: var(--comp-color);
+}
+main .prod-section .project_portfolio img {
+    width: 200px;
+}
+main .prod-section .project_portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
     line-height: 2;
 }
-
-
 main .skills-section .icons img, main .contact-section .contact-icons img {
     width: 100px;
     height: 100px;
